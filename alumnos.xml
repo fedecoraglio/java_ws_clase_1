@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE alumnos
+[<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre, apellido)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ATTLIST alumno idAl ID #REQUIRED>
+]>
+<alumnos>
+	<alumno idAl="test">
+		<nombre>Pepe</nombre>
+		<apellido>Juan</apellido>
+	</alumno>
+</alumnos>
