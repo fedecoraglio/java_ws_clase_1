@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://ws.javawsclase3_3_3/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.javawsclase3_3_3/">
+
+<xs:element name="ProductoException" type="tns:ProductoException"></xs:element>
+
+<xs:element name="guardarProducto" type="tns:guardarProducto"></xs:element>
+
+<xs:element name="guardarProductoResponse" type="tns:guardarProductoResponse"></xs:element>
+
+<xs:element name="obtenerProductos" type="tns:obtenerProductos"></xs:element>
+
+<xs:element name="obtenerProductosResponse" type="tns:obtenerProductosResponse"></xs:element>
+
+<xs:complexType name="obtenerProductos">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerProductosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:producto" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="producto">
+<xs:sequence>
+<xs:element name="id" type="xs:long"></xs:element>
+<xs:element name="name" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="type" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="guardarProducto">
+<xs:sequence>
+<xs:element name="producto" type="tns:producto" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="guardarProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:producto" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ProductoException">
+<xs:sequence>
+<xs:element name="failtString" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="faultCode" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="message" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

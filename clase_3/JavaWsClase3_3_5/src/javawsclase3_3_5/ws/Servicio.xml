@@ -1,0 +1,12 @@
+<handler-chains xmlns="http://java.sun.com/xml/ns/javaee">
+    <handler-chain>
+        <handler>
+            <handler-class>javawsclase3_3_5.handlers.SOAPGenericHandler</handler-class>
+        </handler>
+    </handler-chain>
+    <handler-chain>
+        <handler>
+            <handler-class>javawsclase3_3_5.handlers.LogicalExampleHandler</handler-class>
+        </handler>
+    </handler-chain>
+</handler-chains>
